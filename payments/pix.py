@@ -8,7 +8,7 @@ class Pix:
 
     def create_payment_pix(self):
         # Gerar um ID único para o pagamento
-        bank_payment_id = uuid.uuid4()
+        bank_payment_id = str(uuid.uuid4())
         # Gera código QR para o pagamento
         hash_payment = f"hash_payment_{bank_payment_id}"
         # QR Code generation
